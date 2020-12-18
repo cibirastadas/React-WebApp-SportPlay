@@ -56,7 +56,6 @@ const Aside = ({children}) => {
 
     return (
             <Col className="d-flex flex-column justify-content-center align-items-center text-center bg-light py-5" xl={2} id="aside">
-                {console.log(steps)}
                 <div>
                     {children}
                 </div>

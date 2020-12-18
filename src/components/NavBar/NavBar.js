@@ -7,14 +7,11 @@ const Styles = styled.div`
 .navbar{
     background-color : black;
 }
-.navbar-brand, .navbar-nav .nav-link{
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
     color: #bbb;
     &:hover{
         color:white;
     }
-}
-.navbar-toggler{
-    background-color : white;;
 }
 `
 const NavBar = () => {
@@ -24,17 +21,17 @@ const NavBar = () => {
             <>
             <Styles>
                 <Navbar fixed="top" expand="md" className="p-2">
-                    <Navbar.Brand href="/">PlaySport.lt</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">PlaySport.lt</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Item><Nav.Link as={Link}to="/">Pradinis</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link as={Link} to="/products">Produktai</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link as={Link} to="/about">Apie mus</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link as={Link} to="/contacts">Kontaktai</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link as={Link} to="/settings">Nustatymai</Nav.Link></Nav.Item>
-                </Nav>
-            </Navbar.Collapse>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ml-auto links">
+                            <Nav.Item><Nav.Link  as={Link} to="/">Pradinis</Nav.Link></Nav.Item>
+                            <Nav.Item><Nav.Link  as={Link} to="/products">Produktai</Nav.Link></Nav.Item>
+                            <Nav.Item><Nav.Link  as={Link} to="/about">Apie mus</Nav.Link></Nav.Item>
+                            <Nav.Item><Nav.Link  as={Link} to="/contacts">Kontaktai</Nav.Link></Nav.Item>
+                            <Nav.Item><Nav.Link  as={Link} to="/settings">Nustatymai</Nav.Link></Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
             </Styles>
         </>

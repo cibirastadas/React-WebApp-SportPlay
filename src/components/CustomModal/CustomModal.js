@@ -6,7 +6,6 @@ const CustomModal = ({show, handleClose, steps}) => {
     return (
          <Modal show={show} onHide={handleClose} animation={false}>
             <Modal.Header closeButton>
-                {console.log(steps)}
                 <Modal.Title>Mano Spėjimai</Modal.Title>
             </Modal.Header>
             <Modal.Body>{steps.map(item=>item)}</Modal.Body>
