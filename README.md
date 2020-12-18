@@ -72,6 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Contact
 Tadas Čibiras - cibirastadas@gmail.com
 
-Project link - https://cibirastadas.github.io/React-WebApp-SportPlay
+Project link - https://cibirastadas.github.io/React-WebApp-SportPlay/#/
 
 

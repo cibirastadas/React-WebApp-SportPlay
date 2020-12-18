@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {HashRouter as Router, Route, Switch } from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from './components/NavBar/NavBar';
 import Products from "./containers/Pages/Products/Products"
 import AboutUs from "./containers/Pages/About/About"
