@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import NavBar from './components/NavBar/NavBar';
+import Products from "./containers/Pages/Products/Products"
+import AboutUs from "./containers/Pages/About/About"
+import Contacts from "./containers/Pages/Contacts/Contacts"
+import Footer from './components/Footer/Footer';
+import Home from './containers/Pages/Home/Home';
+import NoMatch from './components/NoMatch/NoMatch';
+import Settings from "./containers/Pages/Settings/Settings"
+import Cookies from "js-cookie"
 
 function App() {
+
+const [headingSize, setHeadingSize] = useState("") 
+const [headingColor, setHeadingColor] = useState("") 
+const [advertising, setAdvertising] = useState("") 
+
+const readCookie=()=>{
+  setHeadingSize(Cookies.get('headingColor'))
+  setHeadingColor(Cookies.get('headingSize'))
+  setAdvertising(Cookies.get('advertising'))
+}
+
+useEffect(()=>{
+  readCookie();
+},[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className={`${headingSize} ${headingColor} ${advertising}`}>
+        <Router>
+          <NavBar/>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/products" component={Products} />
+                <Route exact path="/about" component={AboutUs} />
+                <Route exact path="/contacts" component={Contacts} />
+                <Route exact path="/settings" component={()=><Settings readCookie={readCookie}/>}/>
+                <Route exact component={NoMatch} />
+            </Switch>
+          <Footer/>
+        </Router>
+      </div>
   );
 }
 

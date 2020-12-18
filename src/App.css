@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.headingSize1 #title{
+    font-size: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headingSize2 #title{
+    font-size: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headingSize3 #title{
+    font-size: 3rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headingSize4 #title{
+    font-size: 4rem;
 }
-
-.App-link {
-  color: #61dafb;
+.headingSize5 #title{
+    font-size: 5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advertisingB #aside{
+    background-color: black!important;
+}
+.advertisingY #aside{
+    background-color: yellow!important;
+}
+.advertisingBl #aside{
+    background-color: blue!important;
+}
+.advertisingG #aside{
+    background-color: green!important;
+}
+.advertisingGr #aside{
+    background-color: gray!important;
+}
+.headingColorB #title{
+    color: black;
+}
+.headingColorY #title{
+    color: yellow;
+}
+.headingColorBl #title{
+    color: blue;
+}
+.headingColorG #title{
+    color: green;
+}
+.headingColorGr #title{
+    color: gray;
 }
