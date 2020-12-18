@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import {HashRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from './components/NavBar/NavBar';
 import Products from "./containers/Pages/Products/Products"
 import AboutUs from "./containers/Pages/About/About"
@@ -29,7 +29,7 @@ useEffect(()=>{
 
   return (
     <div className={`${headingSize} ${headingColor} ${advertising}`}>
-        <Router>
+        <Router >
           <NavBar/>
             <Switch>
                 <Route exact path="/" component={Home} />

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "react-bootstrap/NavBar"
 import Nav from "react-bootstrap/Nav"
 import styled from "styled-components"
+import {Link} from "react-router-dom"
 const Styles = styled.div`
 .navbar{
     background-color : black;
@@ -27,11 +28,11 @@ const NavBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Item><Nav.Link href="/">Pradinis</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/products">Produktai</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/about">Apie mus</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/contacts">Kontaktai</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/settings">Nustatymai</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link}to="/">Pradinis</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/products">Produktai</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/about">Apie mus</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/contacts">Kontaktai</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/settings">Nustatymai</Nav.Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
                 </Navbar>
