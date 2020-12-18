@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/React-WebApp-SportPlay/static/css/main.c3666115.chunk.css",
+    "main.js": "/React-WebApp-SportPlay/static/js/main.699a9646.chunk.js",
+    "main.js.map": "/React-WebApp-SportPlay/static/js/main.699a9646.chunk.js.map",
+    "runtime-main.js": "/React-WebApp-SportPlay/static/js/runtime-main.4122b8af.js",
+    "runtime-main.js.map": "/React-WebApp-SportPlay/static/js/runtime-main.4122b8af.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/React-WebApp-SportPlay/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.f036e66f.chunk.js": "/React-WebApp-SportPlay/static/js/2.f036e66f.chunk.js",
+    "static/js/2.f036e66f.chunk.js.map": "/React-WebApp-SportPlay/static/js/2.f036e66f.chunk.js.map",
+    "index.html": "/React-WebApp-SportPlay/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/React-WebApp-SportPlay/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.c3666115.chunk.css.map": "/React-WebApp-SportPlay/static/css/main.c3666115.chunk.css.map",
+    "static/js/2.f036e66f.chunk.js.LICENSE.txt": "/React-WebApp-SportPlay/static/js/2.f036e66f.chunk.js.LICENSE.txt",
+    "static/media/hantelis1.2f447c33.png": "/React-WebApp-SportPlay/static/media/hantelis1.2f447c33.png",
+    "static/media/hantelis2.d757c715.png": "/React-WebApp-SportPlay/static/media/hantelis2.d757c715.png",
+    "static/media/hantelis3.d4753237.png": "/React-WebApp-SportPlay/static/media/hantelis3.d4753237.png",
+    "static/media/sport.f556c8d8.jpg": "/React-WebApp-SportPlay/static/media/sport.f556c8d8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4122b8af.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.f036e66f.chunk.js",
+    "static/css/main.c3666115.chunk.css",
+    "static/js/main.699a9646.chunk.js"
+  ]
+}
